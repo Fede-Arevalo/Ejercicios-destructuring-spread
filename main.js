@@ -113,9 +113,28 @@ console.log(countTheArgs("gato", "perro", 1, 56));
 // Escribe una función llamada combineTwoArrays que reciba dos array cómo argumentos y devuelva solo un array que combine los dos (usando spread operator).
 
 function combineTwoArrays(arg1, arg2) {
-  const arrayCombinado = [...arg1, ...arg2]
+  const arrayCombinado = [...arg1, ...arg2];
   return arrayCombinado;
 }
 
 console.log(combineTwoArrays([1, 2, 3, 4], [5, 6, 7, 8, 9]));
+
+// 3. Extras
+
+const HIGH_TEMPERATURES = {
+  yesterday: 30,
+  today: 35,
+  tomorrow: 32,
+};
+
+// Cambiar las siguientes líneas para guardar desestructurando los valores de temperaturas en las variables maximaHoy y maximaManana.
+
+const { today } = HIGH_TEMPERATURES;
+const maximaHoy = `La temperatura máxima para hoy es: ${today}°`;
+console.log(maximaHoy);
+
+const { tomorrow } = HIGH_TEMPERATURES;
+const maximaManana = `La temperatura máxima para mañana es: ${tomorrow}°`;
+console.log(maximaManana);
+
 
